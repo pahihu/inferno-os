@@ -1,3 +1,21 @@
+Inferno
+=======
+
+It compiles on Rocky Linux 8 and Ubuntu 24.
+Extract the sources in /usr/local/inferno.
+Then do
+
+    . inferno-env.sh
+    ./doinst.sh
+
+The `runemu.sh` script runs the emu and logins as inferno in the graphical shell.
+
+**Good Luck!**
+
+
+README
+======
+
 Inferno® is a distributed operating system, originally developed at Bell Labs, but now developed and maintained by Vita Nuova® as Free Software.  Applications written in Inferno's concurrent programming language, Limbo, are compiled to its portable virtual machine code (Dis), to run anywhere on a network in the portable environment that Inferno provides.  Unusually, that environment looks and acts like a complete operating system.
 
 Inferno represents services and resources in a file-like name hierarchy.  Programs access them using only the file operations open, read/write, and close.  `Files' are not just stored data, but represent devices, network and protocol interfaces, dynamic data sources, and services.  The approach unifies and provides basic naming, structuring, and access control mechanisms for all system resources.  A single file-service protocol (the same as Plan 9's 9P) makes all those resources available for import or export throughout the network in a uniform way, independent of location. An application simply attaches the resources it needs to its own per-process name hierarchy ('name space').
